@@ -16,11 +16,8 @@ window.onload = () => {
   fetch(slide)
     .then((response) => response.json())
     .then((data) => {
-      // Assuming data is an array of movies and we're focusing on the first movie
       const movieOne = data[0];
       let ticketRem = movieOne.capacity - movieOne.tickets_sold;
-
-      // Initial display of movie details
       title.innerHTML = `${movieOne.title}`;
       runtime.innerHTML = `${movieOne.runtime} minutes`;
       showtime.innerHTML = `${movieOne.showtime}`;
@@ -29,7 +26,6 @@ window.onload = () => {
       poster.src = `${movieOne.poster}`;
       buyTicket.innerHTML = "Buy Ticket";
 
-      // Buy Ticket button functionality
       buyTicket.addEventListener("click", () => {
         if (ticketRem > 0) {
           ticketRem -= 1;
@@ -37,12 +33,12 @@ window.onload = () => {
 
           if (ticketRem === 0) {
             buyTicket.innerHTML = `Sold Out`;
-            buyTicket.disabled = true; // Disable the button when sold out
+            buyTicket.disabled = true; 
           }
         }
       });
 
-      // Render movie list
+      
       films.innerHTML = "";
       data.forEach((movie, index) => {
         const li = document.createElement("li");
@@ -57,25 +53,15 @@ window.onload = () => {
 
         li.appendChild(deleteButton);
 
-        // Delete movie functionality
+        
         deleteButton.addEventListener("click", () => {
           fetch(`http://localhost:3000/films/${index}`, {
             method: "DELETE"
           })
-          .then(() => {
-            // Optionally, you can refresh the movie list after deletion
-            // For example:
-            // fetch(slide)
-            //   .then((response) => response.json())
-            //   .then((updatedData) => {
-            //     // Update films or perform any necessary operations
-            //   })
-            //   .catch((error) => console.error('Error fetching updated data:', error));
-          })
           .catch((error) => console.error('Error deleting movie:', error));
         });
 
-        // Click event to display movie details
+        
         li.addEventListener("click", () => {
           ticketRem = movie.capacity - movie.tickets_sold;
           title.innerHTML = `${movie.title}`;
@@ -85,7 +71,7 @@ window.onload = () => {
           ticketNum.innerHTML = `${ticketRem}`;
           poster.src = `${movie.poster}`;
           buyTicket.innerHTML = "Buy Ticket";
-          buyTicket.disabled = false; // Ensure buy ticket button is enabled
+          buyTicket.disabled = false; 
         });
       });
     })

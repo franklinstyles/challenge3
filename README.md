@@ -1,5 +1,5 @@
 # Movie Ticketing System
-==========================
+======================
 
 ## Overview
 
@@ -23,13 +23,16 @@ This is a simple movie ticketing system built using JavaScript, HTML, and CSS. T
 ## Setup
 
 1. Clone the repository to your local machine
+   ```bash
+      https://github.com/franklinstyles/challenge3
+    ```  
 2. Start the local server by running `node server.js` (assuming you have Node.js installed)
 3. Open the `index.html` file in your web browser
 4. View the list of movies and interact with the system
 
-## Known Issues
+## Issues
 
-* The system does not handle errors well (e.g., if the server is down or the JSON file is malformed)
+* The system does not handle errors well
 * The system does not store any user data or preferences
 
 ## Future Development
@@ -39,3 +42,9 @@ This is a simple movie ticketing system built using JavaScript, HTML, and CSS. T
 * Store user data and preferences
 * Improve the UI and user experience
 * Add more features (e.g., movie ratings, reviews, etc.)
+
+### AUTHOR
+ FRANKLIN NDEGWA.
+
+ ### DATE
+ JULY-13-2024
