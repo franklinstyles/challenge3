@@ -26,6 +26,11 @@ This is a simple movie ticketing system built using JavaScript, HTML, and CSS. T
    ```bash
       https://github.com/franklinstyles/challenge3
     ```  
+    . You can use this deployed link
+    ```bash
+      https://franklinstyles.github.io/challenge3/
+    ```  
+
 2. Start the local server by running `node server.js` (assuming you have Node.js installed)
 3. Open the `index.html` file in your web browser
 4. View the list of movies and interact with the system
