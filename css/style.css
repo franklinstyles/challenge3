@@ -1,0 +1,59 @@
+body{
+     background-image: url(https://images.pexels.com/photos/3648850/pexels-photo-3648850.jpeg);
+     background-size: cover;
+}
+#poster{
+    width: 500px;
+    height: 400px;
+}
+.ui.button:hover {
+    background-color: black;
+}
+.ui.button {
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 17px;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+#films {
+    list-style: none;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid gray;
+    background-color: white;
+}
+#films-info {
+    list-style: none;
+    font-size: large;
+    color: beige;
+}
+#buy-ticket{
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 17px;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+#buy-ticket:hover {
+    background-color: white;
+}
+#subtitle {
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+#showing {
+    font-size: 20px;
+    color: white;
+    font-size: small;
+}
+#title {
+   font-weight: bold;
+   font-size: 20px;
+   color: white;
+   margin-bottom: 10px;
+}

@@ -1,0 +1,104 @@
+{
+    "films": [
+      {
+        "id": "1",
+        "title": "Anyone But You",
+        "runtime": "108",
+        "capacity": 30,
+        "showtime": "04:00PM",
+        "tickets_sold": 27,
+        "description": "A giant lizard terrorizes a rural Texas community and a heroic teenager attempts to destroy the creature.",
+        "poster": "https://occ-0-6126-6125.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABX90MOl5nkM3qhQXV3uUos-mSYhzRdtcdV2FO4mvPBrYmZIKOMv0qKk1AyX0KEI_5t47yL4kzfbj6R_eO7Nl1WEXHhE3gr07fIOi4QnjL2bQzr3kHBehbdXLCI_-J42UO-HjXkib2aWG-WT6wcmmnjK-XcYfIZv4Hjo9taDLY43zIlVjbTrXjUEdT2XN0s24PsLqIDCe0cDrpZ5Va393BqcYm8RllnioYyTaVbMQQv5oSIHpfjaH4nepkkHv1_sNOnKX5OLHYodVKN7EBXX-LiUybQunaOmBMMScIPiBewUTreh1alGqLGeJo786h1nE-rc_SXgix-oILBO7i_PLN6c.jpg?r=b9f"
+      },
+      {
+        "id": "2",
+        "title": "Sisu",
+        "runtime": "118",
+        "capacity": 50,
+        "showtime": "06:45PM",
+        "tickets_sold": 44,
+        "description": "A family gets lost on the road and stumbles upon a hidden, underground, devil-worshiping cult led by the fearsome Master and his servant Torgo.",
+        "poster": "https://occ-0-6126-6125.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABQq-sTkE82hL7HkB9HQpKkzyUwzZVBuf-aP2L9_YlJLSGTOZQBwSwt0V9KA3k0JMR55WtoX1qpy5OSKMBWcLMy6W4iU8k4grZbM.jpg?r=677"
+      },
+      {
+        "id": "3",
+        "title": "Luther",
+        "runtime": "93",
+        "capacity": 50,
+        "showtime": "09:30PM",
+        "tickets_sold": 31,
+        "description": "An inventor comes up with a time machine, but must prevent its abuse at the hands of an evil C.E.O.",
+        "poster": "https://occ-0-6126-6125.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABfuA-MMgcT_rF8s1n_5qs3niXyKzoP_-8ULj6Thzab7zNcM9_AnKAgjFdoDoqbbIVrMOS7o0oDr54zJlfyDq2M6k7AQrm_BMNBhoQseoD06UijEoj_VaDFB-Lxo8yopW7sG0.jpg?r=36f"
+      },
+      {
+        "id": "4",
+        "title": "Damsel",
+        "runtime": "101",
+        "capacity": 40,
+        "showtime": "09:00PM",
+        "tickets_sold": 31,
+        "description": "A young man meets a farm girl who is actually a witch.",
+        "poster": "https://occ-0-6126-6125.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABRhybUqTpg08T8TnfSlW1TPvVx4rMoeyARJusNHmFijC4KWeaoSl9QSkEFSlLFXCZC4pITSugdJhfWa1jkM8Ina1EMepcEIntBvhg4f1kvs3f51AEJbfEFSx6B718Jng8r3j.jpg?r=e0f"
+      },
+      {
+        "id": "5",
+        "title": "Atlas",
+        "runtime": "96",
+        "capacity": 50,
+        "showtime": "03:30PM",
+        "tickets_sold": 45,
+        "description": "The Martians kidnap Santa Claus because there is nobody on Mars to give their children presents.",
+        "poster": "https://occ-0-6126-6125.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABYCUnKbHq_vsVpHszs-2nyUsiK0-cMB95AvBH8nvjhlWgqUgnzs-rlguVoQHLNjj6SbSjmryxhPpGXE_022Ck100-aUCSYXe4yIIyIHWkqGHBFw854nc5X8ya5Ctcq3OsAjn.jpg?r=f80"
+      },
+      {
+        "id": "6",
+        "title": "Black Book",
+        "runtime": "112",
+        "capacity": 30,
+        "showtime": "10:30PM",
+        "tickets_sold": 16,
+        "description": "A young man is transformed into a hideous 'moon beast' due to a meteor fragment lodged in his body.",
+        "poster": "https://occ-0-6126-6125.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABQ2JlfVlVTHRlG9ogGhxxz-LAIm1C-E3KiiGN-J-cB3FLh3BD-wJ228CtKIPoIwd34znMJUJoYid61GWdON1vKh9CyP-2Z2f7UDwNZFt11-bfsiLad4-hTwl4G2ZJ0hqyaqC.jpg?r=4fb"
+      },
+      {
+        "id": "7",
+        "title": "Blood Shot",
+        "runtime": "94",
+        "capacity": 30,
+        "showtime": "07:30PM",
+        "tickets_sold": 22,
+        "description": "A woman seeks revenge on her former lover, who owns a skydiving business.",
+        "poster": "https://occ-0-6126-6125.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABUcibPJ6z52E9ghMKxm4N4LYNoMuD8i4hv-ZtgLNWSX_cDyeQ4Bqczg2mc6sAPuNf35R2JB-XjtU0MTVKhYVMXoSy_tb3Om1EM4.jpg?r=ebe"
+      },
+      {
+        "id": "8",
+        "title": "Thanks Giving",
+        "runtime": "115",
+        "capacity": 40,
+        "showtime": "08:30PM",
+        "tickets_sold": 32,
+        "description": "On an isolated island, a small group of people are terrorized by giant voracious shrews in the midst of a hurricane.",
+        "poster": "https://occ-0-6126-6125.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABTeKlojl0f9oSOGYhWoJMYTtgWPik_HHpzkpXUflMCZW3TwS7w576QRYuxGnVkGVeQJm-BpJ0wI5neerl0igPq88mBhogXz7zvI.jpg?r=858"
+      },
+      {
+        "id": "9",
+        "title": "Lightning Thief",
+        "runtime": "99",
+        "capacity": 40,
+        "showtime": "07:30PM",
+        "tickets_sold": 22,
+        "description": "A saboteur posing as a scientist strives to destroy the world's first space station.",
+        "poster": "https://occ-0-6126-6125.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABUVnEi9AkrYA-6g3H9spDiSQXVvsMDDlyVJV4LMK2hWdyKIdUgCZMyr4jz-1FWsZbRMCUrOZSE01XDUl4-WBD1hzVkziViyI9KhkMOh9FV_BdpYJGQ9VtVyHjcosVqfVuCfl2cz7jIFgya3T1tWeb0NnQ1Y-Q43zsaJo5eSMGSjw4_GJy2i0xnJ4j1x-tZD39lSgjjwrTQ2gV_eDNKTFy3wgZRjtp23oTt5nHg49Vzt3-oMcaBdnQy1BwihlE5tUhd_q5kWvFqc_kjXXNxd9evSwdN3lnKTynF5BoOwdwlkGsLdo4Z64zlP2H3Br6RT-QV21V3Fa4uqZR4BKLe4nhVk.jpg?r=e4f"
+      },
+      {
+        "id": "10",
+        "title": "JUMANJI",
+        "runtime": "122",
+        "capacity": 50,
+        "showtime": "10:00PM",
+        "tickets_sold": 44,
+        "description": "Giant spiders from another dimension invade Wisconsin.",
+        "poster": "https://occ-0-6126-6125.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABQgzUo4mJdyWbiLnlpQKPL6s7iF1T_jqYGGc4wHxkbqDNeMIFIesj8PP0LSVbEWUp94kC0f-1ojD18JDyzinEN-qq6CwtRTXHwU.jpg?r=88e"
+      }
+    ]
+}   
