@@ -1,5 +1,5 @@
 
-const slide = "http://localhost:3000/films";
+const slide = "https://challenge3-backend-gold.vercel.app/films";
 const title = document.getElementById("title");
 const runtime = document.getElementById("runtime");
 const filmInfo = document.getElementById("film-info");
