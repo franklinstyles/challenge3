@@ -63,7 +63,7 @@ function renderMovieList(movies) {
     li.onclick = () => displayMovie(movie);
 
     deleteButton.onclick = (event) => {
-      event.stopPropagation();
+      event.remove();
       fetch(`http://localhost:3000/films/${index}`, {
         method: "DELETE"
       }).catch(error => console.error('Error deleting movie:', error));
