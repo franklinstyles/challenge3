@@ -1,79 +1,72 @@
-
 const slide = "https://challenge3-backend-gold.vercel.app/films";
-const title = document.getElementById("title");
-const runtime = document.getElementById("runtime");
-const filmInfo = document.getElementById("film-info");
-const showtime = document.getElementById("showtime");
-const ticketNum = document.getElementById("ticket-num");
-const buyTicket = document.getElementById("buy-ticket");
-const subtitle = document.getElementById("subtitle");
-const films = document.getElementById("films");
-const poster = document.getElementById("poster");
-const showing = document.getElementById("showing");
-const body = document.getElementsByTagName("body")[0];
 
-window.onload = () => {
+document.addEventListener('DOMContentLoaded', () => {
   fetch(slide)
-    .then((response) => response.json())
-    .then((data) => {
-      const movieOne = data[0];
-      let ticketRem = movieOne.capacity - movieOne.tickets_sold;
-      title.innerHTML = `${movieOne.title}`;
-      runtime.innerHTML = `${movieOne.runtime} minutes`;
-      showtime.innerHTML = `${movieOne.showtime}`;
-      filmInfo.innerHTML = `${movieOne.description}`;
-      ticketNum.innerHTML = `${ticketRem}`;
-      poster.src = `${movieOne.poster}`;
-      buyTicket.innerHTML = "Buy Ticket";
-
-      buyTicket.addEventListener("click", () => {
-        if (ticketRem > 0) {
-          ticketRem -= 1;
-          ticketNum.innerHTML = `${ticketRem}`;
-
-          if (ticketRem === 0) {
-            buyTicket.innerHTML = `Sold Out`;
-            buyTicket.disabled = true; 
-          }
-        }
-      });
-
-      
-      films.innerHTML = "";
-      data.forEach((movie, index) => {
-        const li = document.createElement("li");
-        li.className = "film item";
-        li.innerHTML = `${movie.title}`;
-        films.appendChild(li);
-
-        const deleteButton = document.createElement("button");
-        deleteButton.innerHTML = "Delete";
-        deleteButton.classList.add("ui", "button");
-        deleteButton.style.marginLeft = "5px";
-
-        li.appendChild(deleteButton);
-
-        
-        deleteButton.addEventListener("click", () => {
-          fetch(`http://localhost:3000/films/${index}`, {
-            method: "DELETE"
-          })
-          .catch((error) => console.error('Error deleting movie:', error));
-        });
-
-        
-        li.addEventListener("click", () => {
-          ticketRem = movie.capacity - movie.tickets_sold;
-          title.innerHTML = `${movie.title}`;
-          runtime.innerHTML = `${movie.runtime} minutes`;
-          showtime.innerHTML = `${movie.showtime}`;
-          filmInfo.innerHTML = `${movie.description}`;
-          ticketNum.innerHTML = `${ticketRem}`;
-          poster.src = `${movie.poster}`;
-          buyTicket.innerHTML = "Buy Ticket";
-          buyTicket.disabled = false; 
-        });
-      });
+    .then(response => response.json())
+    .then(data => {
+      if (data.length > 0) {
+        displayMovie(data[0]);
+        renderMovieList(data);
+      }
     })
-    .catch((error) => console.error('Error fetching movies:', error));
-};
+    .catch(error => console.error('Error fetching movies:', error));
+});
+
+function displayMovie(movie) {
+  const title = document.querySelector("#title");
+  const runtime = document.querySelector("#runtime");
+  const filmInfo = document.querySelector("#film-info");
+  const showtime = document.querySelector("#showtime");
+  const ticketNum = document.querySelector("#ticket-num");
+  const poster = document.querySelector("#poster");
+  const buyTicket = document.querySelector("#buy-ticket");
+
+  let ticketRem = movie.capacity - movie.tickets_sold;
+  title.textContent = movie.title;
+  runtime.textContent = `${movie.runtime} minutes`;
+  showtime.textContent = movie.showtime;
+  filmInfo.textContent = movie.description;
+  ticketNum.textContent = ticketRem;
+  poster.src = movie.poster;
+  buyTicket.textContent = "Buy Ticket";
+  buyTicket.disabled = ticketRem === 0;
+
+  buyTicket.onclick = () => {
+    if (ticketRem > 0) {
+      ticketRem -= 1;
+      ticketNum.textContent = ticketRem;
+
+      if (ticketRem === 0) {
+        buyTicket.textContent = `Sold Out`;
+        buyTicket.disabled = true;
+      }
+    }
+  };
+}
+
+function renderMovieList(movies) {
+  const films = document.querySelector("#films");
+  films.innerHTML = "";
+
+  movies.forEach((movie, index) => {
+    const li = document.createElement("li");
+    li.className = "film item";
+    li.textContent = movie.title;
+    films.appendChild(li);
+
+    const deleteButton = document.createElement("button");
+    deleteButton.textContent = "Delete";
+    deleteButton.classList.add("ui", "button");
+    deleteButton.style.marginLeft = "5px";
+    li.appendChild(deleteButton);
+
+    li.onclick = () => displayMovie(movie);
+
+    deleteButton.onclick = (event) => {
+      event.stopPropagation();
+      fetch(`http://localhost:3000/films/${index}`, {
+        method: "DELETE"
+      }).catch(error => console.error('Error deleting movie:', error));
+    };
+  });
+}
