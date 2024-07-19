@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     .then(data => {
       if (data.length > 0) {
         displayMovie(data[0]);
-        renderMovieList(data);
+        displayMovieList(data);
       }
     })
     .catch(error => console.error('Error fetching movies:', error));
@@ -44,7 +44,7 @@ function displayMovie(movie) {
   };
 }
 
-function renderMovieList(movies) {
+function displayMovieList(movies) {
   const films = document.querySelector("#films");
   films.innerHTML = "";
 
